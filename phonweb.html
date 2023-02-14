@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Food Delivery website | ApniRasoi.com </title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Roboto+Slab&family=Source+Sans+Pro&family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<style>
+/* reset property */
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* logo property */
+
+#logodiv {
+    padding: 1px 7px;
+    margin: 0px 12px;
+}
+#home p {
+    padding-top: 6px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    width: 317px;
+}
+#home h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    width: 288px;
+}
+
+#logodiv img {
+    height: 44px;
+    width: 50px;
+}
+/* navigation Menu */
+
+#navbar {
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+position: sticky;
+top: 0;
+align-items: center;
+flex-direction: column;
+}
+
+#navbar li {
+    list-style: none;
+    position: sticky;
+}
+
+#navbar li a {
+    display: block;
+    text-decoration: none;
+    padding: 9px 12px;
+    color: aliceblue;
+}
+#navbar ul {
+    display: flex;
+}
+
+nav::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    margin: 1px 0px;
+
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 58px 190px;
+    height: 159px;
+}
+#home h1 {
+    text-align: center;
+    font-size: 2.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    width: 365px;
+}
+#home p {
+    padding-top: 6px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+#home::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 373px;
+    background: url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat center center/cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+}
+
+/* home button */
+.btn {
+    padding: 2px 16px;
+    text-align: center;
+    border: 2px solid rgb(247, 243, 243);
+    border-radius: 20px;
+    margin: 8px 2px;
+    background-color: rgb(207, 176, 107);
+    color: aliceblue;
+    font-size: 1.3rem;
+    font-family: 'Baloo 2', cursive;
+    cursor: pointer;
+
+}
+
+/* section properties */
+#services {
+
+    margin: 2px 2px;
+}
+
+#sectioncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#section-items {
+
+    margin: 1px 1px;
+}
+
+.servicelogo {
+    border: 2px solid red;
+    height: 241px;
+    width: 370px;
+    border-radius: 22px;
+    margin: 9px 3px;
+    background-color: rgb(238, 212, 166);
+}
+.servicelogo img {
+    height: 100px;
+    width: 102px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* client property */
+#clients {
+    height: 40%;
+}
+
+#client-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img {
+    height: 80px;
+    width: 80px;
+    padding: 22px 50px;
+    opacity: 0.9;
+}
+
+#clients::before {
+    content: "";
+    position: absolute;
+    background: url("https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&w=600")no-repeat center center/cover;
+    width: 100%;
+    height: 43%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* contact us property */
+/* form property */
+#form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    width: 420px;
+    height: 22px;
+    border-radius: 4px;
+}
+input[type="text" ] {
+    padding: 1px 2px;
+}
+::placeholder{
+    padding: 1px 2px;
+}
+
+form textarea {
+    width: 420px;
+    font-family: 'Baloo 2', cursive;
+    height: 130px;
+}
+
+form label {
+    width: 423px;
+    margin: 4px;
+    font-family: 'Baloo 2', cursive;
+}
+#Contact{
+    margin: 40px 0px;
+}
+#Contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_1280.jpg") no-repeat center center/cover;
+}
+
+/* footer property */
+.foottext {
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1.1rem;
+    color: aliceblue;
+}
+footer::before{
+    background-color: black;
+    opacity: 0.8;
+    height:20px;
+    position: absolute;
+    z-index: -1;
+content: "";
+width:100%;
+height:6%;
+}
+
+/* utility css */
+.h1-primary {
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+}
+
+.h2-secondary {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1px 1px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.center {
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    margin: 3px 6px;
+
+}
+.btn {
+    padding: 1px 0px;
+    text-align: center;
+    border: 2px solid rgb(247, 243, 243);
+    border-radius: 20px;
+    margin: 14px 1px;
+    background-color: rgb(207, 176, 107);
+    color: aliceblue;
+    font-size: 1rem;
+    font-family: 'Baloo 2', cursive;
+    cursor: pointer;
+    width: 92px;
+}
+.center {
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    margin: 0px 0px;
+    font-size: 0.9rem;
+}
+.servicelogo img {
+    height: 69px;
+    width: 69px;
+    display: block;
+    margin: 10px auto;
+}
+.h2-secondary {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1px 1px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.h1-primary {
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+}
+#client-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#clients img {
+    height: 40px;
+    width: 44px;
+    padding: 24px 40px;
+    opacity: 0.9;
+}
+form input {
+    width: 328px;
+    height: 22px;
+    border-radius: 4px;
+}
+form label {
+    width: 331px;
+    margin: 1px;
+    font-family: 'Baloo 2', cursive;
+}
+form textarea {
+    width: 331px;
+    font-family: 'Baloo 2', cursive;
+    height: 130px;
+}
+#Contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(/img/contactus2.jpg) no-repeat center center/cover;
+}
+#Contact {
+    margin: 45px 0px;
+    height: 407px;
+}
+#clients {
+    height: 230px;
+}
+footer::before {
+    background-color: black;
+    opacity: 0.8;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 9%;
+}
+#clients::before {
+    content: "";
+    position: absolute;
+    background: url(https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&w=600)no-repeat center center/cover;
+    width: 100%;
+    height: 29%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#sectioncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+</style>
+</head>
+<body>
+    <nav id="navbar">
+<div id="logodiv">
+    <img src="https://cdn-icons-png.flaticon.com/512/695/695934.png" alt="ApniRasoi">
+</div>
+<ul id="container">
+<li class="box"><a href="#">Home</a></li>
+<li class="box"><a href="#">Services</a></li>
+<li class="box"><a href="#">About us</a></li>
+<li class="box"><a href="#">Contact us</a></li>
+
+</ul>
+    </nav>
+    <section id="home">
+<h1>Welcome to ApniRasoi</h1>
+
+<p>The Most Hygienic and delicious Restaurent is now available in your area that too in handy price.We welcome you to come and try our special dishes.</p>
+<button class="btn">Order now</button>
+    </section> 
+    <section id="services">
+<h1 class="h1-primary">Our services</h1>
+<div id="sectioncontainer">
+    <div class="servicelogo">
+        <img src="https://cdn-icons-png.flaticon.com/512/1404/1404945.png" alt="pizza">
+<div id="section-items">
+    <h2 class="h2-secondary">Food ordering</h2>
+    <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit a voluptate nesciunt provident ab, exercitationem nam tempore! Doloribus, veniam deserunt, facilis amet voluptates explicabo incidunt </p>
+</div>
+</div>
+<div class="servicelogo">
+    <img src="https://cdn-icons-png.flaticon.com/512/561/561611.png" alt="foodimage">
+
+    <div id="section-items">
+        <h2 class="h2-secondary">Catering</h2>
+        <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit a voluptate nesciunt provident ab, exercitationem nam tempore! Doloribus, veniam deserunt, facilis amet voluptates explicabo incidunt </p>
+    </div>
+    </div>
+    <div class="servicelogo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3063/3063822.png" alt="foodimage">
+        <div id="section-items">
+            <h2 class="h2-secondary">Bulk Ordering</h2>
+            <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit a voluptate nesciunt provident ab, exercitationem nam tempore! Doloribus, veniam deserunt, facilis amet voluptates explicabo incidunt </p>
+    </div>
+        </div>
+        </div>
+    </section>
+<section id="clients">
+    <h1 class="h1-primary">Our Clients</h1>
+    <div id="client-container">
+        <div class="clientitem">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="facebook">
+        </div>
+        <div class="clientitem">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="microsoft">
+        </div>
+        <div class="clientitem">
+            <img src="https://cdn-icons-png.flaticon.com/512/2504/2504929.png" alt="netflix">
+        </div>
+        <div class="clientitem">
+            <img src="https://cdn-icons-png.flaticon.com/512/1532/1532444.png" alt="apple">
+        </div>
+        <div class="clientitem">
+            <img src="https://cdn-icons-png.flaticon.com/512/882/882749.png" alt="hp">
+        </div>
+    </div>
+</div>
+</section>
+<section id="Contact">
+    <h1 class="h1-primary">Contact us</h1>
+<form action="" id="form-group">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter Your name">
+    <label for="Email">Email:</label>
+    <input type="text" name="name" id="Email" placeholder="Enter Your Email">
+    <label for="phone">Phone no:</label>
+    <input type="text" name="phone" id="phone" placeholder="Enter Your Mobile no.">
+    <label for="area">Area:</label>
+    <input type="text" name="area" id="name" placeholder="Enter Your Area">
+    <label for="Message">Message:</label>
+  <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+</form>
+
+</section>
+<footer>
+    <div class="foottext">
+    Copyright &copy; www.ApniRasoi.com. All rights reserved!
+</div>
+
+
+</footer>
+
+
+
+</body>
+</html>

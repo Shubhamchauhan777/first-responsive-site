@@ -1,0 +1,102 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 58px 0px;
+    height: 200px;
+    width: 109%;
+}
+#home::before {
+    position: absolute;
+    content: "";
+    width: 109%;
+    height: 349px;
+    background: url(/img/foodbg.jpg) no-repeat center center/cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+}
+#home p {
+    padding-top: 5px;
+    margin: 0px 122px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+nav::before {
+    position: absolute;
+    content: "";
+    width: 109%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#services {
+    margin: 2px 2px;
+    width: 109%;
+}
+.servicelogo {
+    border: 2px solid red;
+    height: 361px;
+    border-radius: 22px;
+    margin: 24px 3px;
+    background-color: rgb(238, 212, 166);
+}
+#clients::before {
+    content: "";
+    position: absolute;
+    background: url(/img/bgimage3.jpg)no-repeat center center/cover;
+    width: 109%;
+    height: 43%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.h1-primary {
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    width: 100%;
+}
+#client-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 109%;
+}
+#form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 109%;
+}
+#Contact::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 56%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(/img/contactus2.jpg) no-repeat center center/cover;
+}
+footer::before {
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 109%;
+    height: 6%;
+}
+#sectioncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91%;
+}
